@@ -11,13 +11,13 @@ import java.util.List;
  * @date 2020/2/29 15:31
  */
 @Data
-@SingleTreeNode(childId = "areaId",parentId = "parentId",childList = "childList")
+@SingleTreeNode(childId = "areaId", parentId = "parentId", childList = "childList")
 public class Area {
 
-  public Area(Integer areaId,String areaName,Integer parentId){
-    this.areaId=areaId;
-    this.areaName=areaName;
-    this.parentId=parentId;
+  public Area(Integer areaId, String areaName, Integer parentId) {
+    this.areaId = areaId;
+    this.areaName = areaName;
+    this.parentId = parentId;
   }
 
   private Integer areaId;
@@ -29,7 +29,7 @@ public class Area {
   private List<Area> childList;
 
   public String toString() {
-      return JSON.toJSONString(this);
+    return JSON.toJSONString(this);
   }
 
 }

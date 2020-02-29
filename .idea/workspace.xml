@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33221019-f292-4a91-8174-d0f999ab820c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="132" column="32" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
+            <state relative-caret-position="242">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="704">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getClassOfPackage#0;class#ClassUtils#0" />
@@ -56,17 +56,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="128">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="-70">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
@@ -102,12 +102,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/util/ObjectUtils.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java" />
       </list>
     </option>
   </component>
@@ -216,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582991250482" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582991388785" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -290,7 +290,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582959382586</updated>
       <workItem from="1582959393162" duration="420000" />
-      <workItem from="1582959842706" duration="15629000" />
+      <workItem from="1582959842706" duration="15953000" />
     </task>
     <task id="LOCAL-00001" summary="自定义注解">
       <created>1582961195834</created>
@@ -299,15 +299,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582961195834</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="获取具有子父级关系的列表的树结构">
+      <created>1582991335856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582991335856</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16049000" />
+    <option name="totallyTimeSpent" value="16373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="281" y="2" width="1264" height="832" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.20232172" />
@@ -323,7 +329,7 @@
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26912183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5714286" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,7 +360,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="自定义注解" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义注解" />
+    <MESSAGE value="获取具有子父级关系的列表的树结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取具有子父级关系的列表的树结构" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/jdk11/install/lib/src.zip!/java.base/java/util/Collections.java">
@@ -368,24 +375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/jdk11/install/lib/src.zip!/java.base/java/io/FileFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -396,10 +389,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/ClassUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="704">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getClassOfPackage#0;class#ClassUtils#0" />
@@ -408,24 +418,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/annotation/SingleTreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/pojo/Area.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="-70">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#298#299#0" expanded="true" />
             <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/util/TreeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="132" column="32" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

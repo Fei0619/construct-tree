@@ -17,10 +17,12 @@ public @interface SingleTreeNode {
    * 子节点id
    */
   String childId();
+
   /**
    * 父节点id
    */
   String parentId();
+
   /**
    * 该节点的子节点列表字段值
    */

@@ -29,12 +29,12 @@ public class ClassUtils {
    */
   public static List<Class<?>> getAnnotatedClassOfPackages(@NotNull List<String> packageNameList,
                                                            @NotNull Class<? extends Annotation> clazz) {
-    List<Class<?>> annotatedClassList= new ArrayList<>();
+    List<Class<?>> annotatedClassList = new ArrayList<>();
     for (String packageName : packageNameList) {
       List<Class<?>> classList = getClassOfPackage(packageName);
       for (Class<?> item : classList) {
-        Annotation annotation=item.getAnnotation(clazz);
-        if (annotation!=null){
+        Annotation annotation = item.getAnnotation(clazz);
+        if (annotation != null) {
           annotatedClassList.add(item);
         }
       }

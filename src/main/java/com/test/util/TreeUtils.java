@@ -51,7 +51,7 @@ public class TreeUtils {
         throw new RuntimeException("获取<" + clazz.getName() + ">类<" + childList + ">的get方法出现异常：" + e.getMessage());
       }
       try {
-        Method setChildList = clazz.getMethod("set" + upperTheFirstLetter(childList),List.class);
+        Method setChildList = clazz.getMethod("set" + upperTheFirstLetter(childList), List.class);
         setChildListMethodMap.put(clazz, setChildList);
       } catch (NoSuchMethodException e) {
         throw new RuntimeException("获取<" + clazz.getName() + ">类<" + childList + ">的set方法出现异常：" + e.getMessage());
@@ -73,34 +73,34 @@ public class TreeUtils {
    * @date 2020/2/29 22:50
    */
   public static <T> List<T> getObjectTree(List<T> sourceList, @NotNull Class<T> clazz) throws InvocationTargetException, IllegalAccessException {
-    if (sourceList==null || sourceList.size()<2){
+    if (sourceList == null || sourceList.size() < 2) {
       return sourceList;
     }
-    SingleTreeNode annotation=clazz.getAnnotation(SingleTreeNode.class);
-    if (annotation==null){
-      throw new RuntimeException("未找到<"+clazz+">类的SingleTreeNode注解！");
+    SingleTreeNode annotation = clazz.getAnnotation(SingleTreeNode.class);
+    if (annotation == null) {
+      throw new RuntimeException("未找到<" + clazz + ">类的SingleTreeNode注解！");
     }
-    Method getChildIdMethod=GET_CHILD_METHOD_MAP.get(clazz);
-    Method getParentIdMethod=GET_PARENT_METHOD_MAP.get(clazz);
-    Method getChildListMethod=GET_CHILDlIST_METHOD_MAP.get(clazz);
-    Method setChildListMethod=SET_CHILDlIST_METHOD_MAP.get(clazz);
+    Method getChildIdMethod = GET_CHILD_METHOD_MAP.get(clazz);
+    Method getParentIdMethod = GET_PARENT_METHOD_MAP.get(clazz);
+    Method getChildListMethod = GET_CHILDlIST_METHOD_MAP.get(clazz);
+    Method setChildListMethod = SET_CHILDlIST_METHOD_MAP.get(clazz);
     //初始化容器
-    List<T> resList=new ArrayList<>();
+    List<T> resList = new ArrayList<>();
     //将源转化成 areaId -> this 的Map
-    Map<Object,T> sourceMap=new HashMap<>();
-    for (T t:sourceList){
-      Object childParam=getChildIdMethod.invoke(t);
-      sourceMap.put(childParam,t);
+    Map<Object, T> sourceMap = new HashMap<>();
+    for (T t : sourceList) {
+      Object childParam = getChildIdMethod.invoke(t);
+      sourceMap.put(childParam, t);
     }
-    for (T t:sourceList){
-      Object parentBean=sourceMap.get(getParentIdMethod.invoke(t));
-      if (parentBean==null){
+    for (T t : sourceList) {
+      Object parentBean = sourceMap.get(getParentIdMethod.invoke(t));
+      if (parentBean == null) {
         resList.add(t);
-      }else{
-        List<T> childList=(List<T>) getChildListMethod.invoke(parentBean);
-        if (childList==null){
-          childList=new ArrayList<>();
-          setChildListMethod.invoke(parentBean,childList);
+      } else {
+        List<T> childList = (List<T>) getChildListMethod.invoke(parentBean);
+        if (childList == null) {
+          childList = new ArrayList<>();
+          setChildListMethod.invoke(parentBean, childList);
         }
         childList.add(t);
       }
@@ -119,17 +119,17 @@ public class TreeUtils {
   }
 
   public static void main(String[] args) {
-    Area area1=new Area(1,"A",0);
-    Area area2=new Area(2,"B",0);
-    Area area3=new Area(3,"A-1",1);
-    Area area4=new Area(4,"A-1-1",3);
-    Area area5=new Area(5,"A-2",1);
-    Area area6=new Area(6,"A-3",1);
-    Area area7=new Area(7,"C",0);
-    Area area8=new Area(8,"B-1",2);
-    List<Area> sourceList=Arrays.asList(area1,area2,area3,area4,area5,area6,area7,area8);
+    Area area1 = new Area(1, "A", 0);
+    Area area2 = new Area(2, "B", 0);
+    Area area3 = new Area(3, "A-1", 1);
+    Area area4 = new Area(4, "A-1-1", 3);
+    Area area5 = new Area(5, "A-2", 1);
+    Area area6 = new Area(6, "A-3", 1);
+    Area area7 = new Area(7, "C", 0);
+    Area area8 = new Area(8, "B-1", 2);
+    List<Area> sourceList = Arrays.asList(area1, area2, area3, area4, area5, area6, area7, area8);
     try {
-      List<Area> resList=getObjectTree(sourceList,Area.class);
+      List<Area> resList = getObjectTree(sourceList, Area.class);
       System.out.println(resList);
     } catch (InvocationTargetException e) {
       e.printStackTrace();
